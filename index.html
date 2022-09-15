@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"><h1>Welcome to the Croc Zone!</h1></div>
+  <div class="item2"><h2>Croc Info</h2><br>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Crocodile">Croc Wiki</a></li>
+    <li><a href="https://www.britannica.com/animal/crocodile-order">Croc Britannica</a></li>
+    <li><a href="https://www.google.com/search?q=crocodile&client=safari&rls=en&sxsrf=ALiCzsaCqKwlaAntQBsNS_lVqjHZ6Kk8Gg:1663226431993&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi_wKOloZb6AhWol4sKHeHaB7gQ_AUoAXoECAIQAw&biw=1512&bih=865&dpr=2">Plenty of images</a></li>
+ </ul>
+    </div>
+  <div class="item3">
+  <p>Crocodiles (family Crocodylidae) or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. The term crocodile is sometimes used even more loosely to include all extant members of the order Crocodilia, which includes the alligators and caimans (family Alligatoridae), the gharial and false gharial (family Gavialidae) among other extinct taxa.</p>
+  </div>
+  <div class="item4">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Saltwater_crocodile.jpg/1600px-Saltwater_crocodile.jpg?20130505185059" alt="A big croc">
+         </div
+  <div class="item5">Thank you for stopping by!</div>
+</div>
+
+</body>
+</html>
+
